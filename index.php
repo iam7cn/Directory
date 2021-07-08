@@ -1,3 +1,4 @@
+<?php include "resources/anti_qq.php";?>
 <?php
 
     // Include the DirectoryLister class
