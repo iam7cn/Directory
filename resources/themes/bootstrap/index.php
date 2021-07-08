@@ -21,7 +21,7 @@ if(file_exists($md_file)){
 ?>
 <html>
     <head>
-        <title>Directory <?php echo $md_path_all; ?></title>
+        <title>HX共享文件索引</title>
         <link rel="shortcut icon" href="resources/themes/bootstrap/img/folder.png" /> <!-- 网站LOGO -->
         <link rel="stylesheet" href="resources/themes/bootstrap/css/bootstrap.min.css" /> <!-- CSS基本库 -->
         <link rel="stylesheet" href="resources/themes/bootstrap/css/font-awesome.min.css" /> <!-- 网站图标CSS式样 -->
@@ -53,9 +53,8 @@ if(file_exists($md_file)){
         </div>
         <div class="path-announcement navbar navbar-default navbar-fixed-top">
             <div class="path-announcement2 container">
-                <!-- 顶部公告栏 -->
-		    <p><i class="fa fa-volume-down"></i>这是一个魔改的私人网盘网站，参考项目为<a href="http://www.directorylister.com/">DirectoryLister</a></p>
-            	<!-- 顶部公告栏 -->
+
+		    <p><i class="fa fa-volume-down"></i>仅列出公共文件</p>
             </div>
         </div>
 		<div class="container"  id="container_top">
@@ -71,9 +70,9 @@ if(file_exists($md_file)){
             <?php endif; ?>
             <div id="directory-list-header">
                 <div class="row">
-                    <div class="col-md-7 col-sm-6 col-xs-10">文件</div>
+                    <div class="col-md-7 col-sm-6 col-xs-10">文件名</div>
                     <div class="col-md-2 col-sm-2 col-xs-2 text-right">大小</div>
-                    <div class="col-md-3 col-sm-4 hidden-xs text-right">最后修改时间</div>
+                    <div class="col-md-3 col-sm-4 hidden-xs text-right">修改时间</div>
                 </div>
             </div>
             <ul id="directory-listing" class="nav nav-pills nav-stacked">

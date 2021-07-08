@@ -15,6 +15,8 @@ return array(
         '*/.ht*',
         'resources',
         'resources/*',
+        'js',
+        'js/*',
         'ErrorFiles',
         'ErrorFiles/*',
         'analytics.inc',
