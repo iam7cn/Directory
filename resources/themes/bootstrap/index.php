@@ -52,7 +52,6 @@ if(file_exists($md_file)){
     <body>
         <div id="page-navbar" class="path-top navbar navbar-default navbar-fixed-top">
             <div class="container">
-            	<button class="add-button">安装本站应用</button>
                 <?php $breadcrumbs = $lister->listBreadcrumbs(); ?>
                 <p class="navbar-text">
                     <?php foreach($breadcrumbs as $breadcrumb): ?>
@@ -68,8 +67,7 @@ if(file_exists($md_file)){
         </div>
         <div class="path-announcement navbar navbar-default navbar-fixed-top">
             <div class="path-announcement2 container">
-
-		    <p><i class="fa fa-volume-down"></i>仅列出公共文件，<a href="resources\/notice.html">转载说明</a></p>
+		    <p><i class="fa fa-volume-down"></i><a class="add-button">点击安装本站应用&nbsp</a>仅列出公共文件&nbsp<a href="resources\/notice.html">转载说明</a></p>
             </div>
         </div>
 		<div class="container"  id="container_top">

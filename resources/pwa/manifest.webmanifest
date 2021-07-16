@@ -1,7 +1,7 @@
 {
   "background_color": "#333",
   "description": "HX共享文件索引",
-  "display": "fullscreen",
+  "display": "minimal-ui",
   "icons": [
     {
       "src": "/s/resources/pwa/icon/cloud_logo512.png",
