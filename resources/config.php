@@ -26,6 +26,7 @@ return array(
         '.well-known/*',
         '*/README.html',
         'README.html',
+        'sw.js',
         'robots.txt'
     ),
 

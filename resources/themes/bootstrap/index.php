@@ -22,6 +22,15 @@ if(file_exists($md_file)){
 <html>
     <head>
         <title>HX共享文件索引</title>
+        <!--pwa-->
+        <meta name="theme-color" content="#333" />
+		<meta name="msapplication-TileColor" content="#333" /><!--状态栏颜色-->
+		<meta name="msapplication-TileImage" content="resources/pwa/icon/cloud_logo192.png" />
+		<meta name="mobile-web-app-capable" content="yes" /><!--删除默认的苹果工具栏和菜单栏,yes为删除-->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" /><!--状态栏灰色半透明-->
+		<meta name="apple-mobile-web-app-title" content="HX共享文件索引" />
+		<!--pwa-->
         <link rel="shortcut icon" href="resources/themes/bootstrap/img/folder.png" /> <!-- 网站LOGO -->
         <link rel="stylesheet" href="resources/themes/bootstrap/css/bootstrap.min.css" /> <!-- CSS基本库 -->
         <link rel="stylesheet" href="resources/themes/bootstrap/css/font-awesome.min.css" /> <!-- 网站图标CSS式样 -->
@@ -34,10 +43,16 @@ if(file_exists($md_file)){
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <?php file_exists('analytics.inc') ? include('analytics.inc') : false; ?>
+        <!--pwa-->
+    	<script src="resources/pwa/js/index.js" defer></script>
+    	<link rel="manifest" href="resources/pwa/manifest.webmanifest">
+    	<link rel="apple-touch-icon" href="resources/pwa/icon/cloud_logo192.png">
+		<!--pwa-->
     </head>
     <body>
         <div id="page-navbar" class="path-top navbar navbar-default navbar-fixed-top">
             <div class="container">
+            	<button class="add-button">安装本站应用</button>
                 <?php $breadcrumbs = $lister->listBreadcrumbs(); ?>
                 <p class="navbar-text">
                     <?php foreach($breadcrumbs as $breadcrumb): ?>
@@ -54,7 +69,7 @@ if(file_exists($md_file)){
         <div class="path-announcement navbar navbar-default navbar-fixed-top">
             <div class="path-announcement2 container">
 
-		    <p><i class="fa fa-volume-down"></i>仅列出公共文件</p>
+		    <p><i class="fa fa-volume-down"></i>仅列出公共文件，<a href="resources\/notice.html">转载说明</a></p>
             </div>
         </div>
 		<div class="container"  id="container_top">

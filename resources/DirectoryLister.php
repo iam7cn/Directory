@@ -194,7 +194,7 @@ class DirectoryLister {
         // 静态设置主页路径
         $breadcrumbsArray[] = array(
             'link' => $this->_appURL,
-            'text' => 'Directory'
+            'text' => '主目录'
         );
 
         // Generate breadcrumbs

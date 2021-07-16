@@ -1,0 +1,17 @@
+{
+  "background_color": "#333",
+  "description": "HX共享文件索引",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "/s/resources/pwa/icon/cloud_logo512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "name": "HX共享文件索引",
+  "short_name": "如意云",
+  "start_url": "/s/",
+  "theme_color": "#333"
+}
