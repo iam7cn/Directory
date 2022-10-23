@@ -4,7 +4,7 @@
   "display": "minimal-ui",
   "icons": [
     {
-      "src": "/s/resources/pwa/icon/cloud_logo512.png",
+      "src": "/tmp/resources/pwa/icon/cloud_logo512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
@@ -12,6 +12,6 @@
   ],
   "name": "HX共享文件索引",
   "short_name": "如意云",
-  "start_url": "/s/",
+  "start_url": "/tmp/",
   "theme_color": "#333"
 }

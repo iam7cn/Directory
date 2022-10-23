@@ -2,7 +2,7 @@
 <?php 
 header("Content-type: text/html; charset=utf-8"); 
 $md_path_all = $lister->getListedPath();
-$suffix_array = explode('.', $_SERVER['HTTP_HOST']);
+$suffix_array = explode('.', $_SERVER['HTTP_HOST']."/tmp");
 $suffix = end($suffix_array);
 $md_path = explode($suffix, $md_path_all);
 if($md_path[1] != ""){
@@ -36,6 +36,9 @@ if(file_exists($md_file)){
         <link rel="stylesheet" href="resources/themes/bootstrap/css/font-awesome.min.css" /> <!-- 网站图标CSS式样 -->
         <link rel="stylesheet" href="resources/themes/bootstrap/css/style.css" /> <!-- 网站主要式样 -->
         <link rel="stylesheet" href="resources/themes/bootstrap/css/prism.css" /> <!-- 代码高亮式样 -->
+        <link rel="stylesheet" href="resources/themes/bootstrap/css/md.css">
+
+
         <script src="resources/themes/bootstrap/js/jquery.min.js"></script> <!-- JS基本库 -->
 		<script src="resources/themes/bootstrap/js/bootstrap.min.js"></script> <!-- JS基本库 -->
 		<script src="resources/themes/bootstrap/js/prism.js"></script> <!-- 代码高亮JS依赖 -->
@@ -67,7 +70,7 @@ if(file_exists($md_file)){
         </div>
         <div class="path-announcement navbar navbar-default navbar-fixed-top">
             <div class="path-announcement2 container">
-		    <p><i class="fa fa-volume-down"></i><a class="add-button">点击安装本站应用&nbsp</a>仅列出公共文件&nbsp<a href="resources\/notice.html">转载说明</a></p>
+		    <p><i class="fa fa-volume-down"></i><a class="add-button">点击安装本站应用&nbsp</a>仅列出公共文件&nbsp<a href="resources\/notice.html">广告与转载声明</a></p>
             </div>
         </div>
 		<div class="container"  id="container_top">
@@ -117,11 +120,11 @@ if(file_exists($md_file)){
                 <?php endforeach; ?>
             </ul>
         </div>
+
 		<!-- READMNE 说明 -->
 		<?php
-		if($md_text != ""){
-			echo $md_text;
-		}
+		if($md_text != "")
+			echo '<div id="readme" class="my-4 order-first" style="scroll-margin-top: 8rem;"><div class="rounded-lg overflow-hidden shadow-md"><header class="flex items-center bg-blue-600 px-4 py-3 text-white dark:bg-purple-700"><i class="fas fa-book fa-lg pr-3"></i> README.md</header><article class="bg-gray-100 rounded-b-lg px-4 py-8 sm:px-6 md:px-8 lg:px-12 dark:bg-gray-900 dark:border-0 markdown" v-pre="">'.$md_text.'</article></div></div>'
 		?>
 		<!-- READMNE 说明 -->
         </div>
