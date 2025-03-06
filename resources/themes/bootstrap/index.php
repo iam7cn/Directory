@@ -124,7 +124,7 @@ if(file_exists($md_file)){
 		<!-- READMNE 说明 -->
 		<?php
 		if($md_text != "")
-			echo '<div id="readme" class="my-4 order-first" style="scroll-margin-top: 8rem;"><div class="rounded-lg overflow-hidden shadow-md"><header class="flex items-center bg-blue-600 px-4 py-3 text-white dark:bg-purple-700"><i class="fas fa-book fa-lg pr-3"></i> README.md</header><article class="bg-gray-100 rounded-b-lg px-4 py-8 sm:px-6 md:px-8 lg:px-12 dark:bg-gray-900 dark:border-0 markdown" v-pre="">'.$md_text.'</article></div></div>'
+			echo '<div id="readme" class="my-4 order-first" style="scroll-margin-top: 8rem;"><div class="rounded-lg overflow-hidden shadow-md"><header class="flex items-center bg-blue-600 px-4 py-3 text-white dark:bg-purple-700"><i class="fa fa-book fa-lg pr-3"></i> README.md</header><article class="bg-gray-100 rounded-b-lg px-4 py-8 sm:px-6 md:px-8 lg:px-12 dark:bg-gray-900 dark:border-0 markdown" v-pre="">'.$md_text.'</article></div></div>'
 		?>
 		<!-- READMNE 说明 -->
         </div>
